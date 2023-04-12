@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chatbot HTML/CSS/Python</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Chatbot</h2>
+      </div>
+
+      <div class="chat-box" id="chat-form">
+        <div class="chat-message" id="chat-container">
+          <p>Hola, ¿en qué puedo ayudarte?</p>
+        </div>
+        <div class="chat-message user">
+          <p>respuesta del usuario</p>
+        </div>
+      </div>
+
+      
+      <div class="chat-input"  method="POST">
+        <input type="text" name="user_input" id="user-input" placeholder="Escribe tu mensaje aquí...">
+        <button type="submit" id="submit-btn">Enviar</button>
+    
+      </div>
+    </div>
+        <!--logica para obtener los valores del input(inicio)-->
+        <script>
+          const input = document.getElementById("user-input");
+          const button = document.getElementById("submit-btn");
+        
+          button.addEventListener("click", function () {
+            const user_input = input.value;
+            send_message(user_input);
+            input.value = "";
+           console.log(user_input)
+        //logica de poner respuesta de usuario en chat(inicio)
+        //logica de poner respuesta de usuario en chat(fin)
+
+          });
+        
+          input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+              event.preventDefault();
+              button.click();
+              console.log(respuesta)
+        //logica de poner respuesta de BOT en chat(inicio)
+        //logica de poner respuesta de BOT en chat(fin)
+            }
+          });
+        </script>
+        <!--logica para obtener los valores del input(fin)-->
+        <!-- <script src="{{ url_for('static', filename='chatbot.js') }}"></script> -->
+        <script src="../static/chatBot.js"></script>
+
+  </body>
+</html>
