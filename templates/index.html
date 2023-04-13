@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Chatbot HTML/CSS/Python</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../static/style.css">
   </head>
   <body>
 
@@ -12,7 +12,7 @@
         <h2>Chatbot</h2>
       </div>
 
-      <div class="chat-box" id="chat-form">
+      <div class="chat-box" id="chat-form" >
         <div class="chat-message" id="chat-container">
           <p>Hola, ¿en qué puedo ayudarte?</p>
         </div>
@@ -22,7 +22,7 @@
       </div>
 
       
-      <div class="chat-input"  method="POST">
+      <div class="chat-input"  method="POST" method="POST">
         <input type="text" name="user_input" id="user-input" placeholder="Escribe tu mensaje aquí...">
         <button type="submit" id="submit-btn">Enviar</button>
     
@@ -37,7 +37,6 @@
             const user_input = input.value;
             send_message(user_input);
             input.value = "";
-           console.log(user_input)
         //logica de poner respuesta de usuario en chat(inicio)
         //logica de poner respuesta de usuario en chat(fin)
 

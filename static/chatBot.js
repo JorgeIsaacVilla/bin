@@ -1,8 +1,8 @@
-var url = "http://localhost:5000/get_response";
+//var url = "http://localhost:5000/get_response";
 
 // función para leer el archivo JSON
 function getResponse() {
-    fetch('../py/response.json')
+    fetch('../response.json')
       .then(response => response.json())
       .then(data => {
         // mostrar respuesta en el chatbot

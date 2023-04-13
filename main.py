@@ -586,7 +586,7 @@ def unknown():
 
 # Estructura conversaciónal de bin (FIN)
 respuesta = None
-with open("../py/response.json", "w") as f:
+with open("./response.json", "w") as f:
     json.dump({"respuesta": respuesta}, f)
 
 
