@@ -12,8 +12,6 @@ button.addEventListener("click", function (event) {
 //logica de poner respuesta de usuario en chat(inicio)
 //logica de poner respuesta de usuario en chat(fin)
 
- 
-
 input.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
