@@ -44,14 +44,14 @@
           <p>respuesta del usuario</p>
         </div>
       </div>
-
       
-      <div class="chat-input"  method="POST" method="POST">
+      <form class="chat-input" action="/get_response" method="POST">
         <input type="text" name="user_input" id="user-input" placeholder="Escribe tu mensaje aquí...">
         <button type="submit" id="submit-btn">Enviar</button>
-    </div>
-        <!-- <script src="{{ url_for('static', filename='chatbot.js') }}"></script> -->
-        <script src="../static/chatBot.js"></script>
+      </form>
+      
+         <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+        <!--<script src="../static/chatBot.js"></script> -->
         
 
   </body>

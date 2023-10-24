@@ -1,26 +1,28 @@
 //logica para obtener los valores del input(inicio)-->
 
-  const input = document.getElementById("user-input");
-  const button = document.getElementById("submit-btn");
+const input = document.getElementById("user-input");
+const button = document.getElementById("submit-btn");
 
-  button.addEventListener("click", function () {
-    const user_input = input.value;
-    send_message(user_input);
-    input.value = "";
+button.addEventListener("click", function (event) {
+  event.preventDefault(); // Evitar que se recargue la página
+  const user_input = input.value;
+  send_message(user_input);
+  input.value = "";
+});
 //logica de poner respuesta de usuario en chat(inicio)
 //logica de poner respuesta de usuario en chat(fin)
 
-  });
+ 
 
-  input.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      button.click();
-      console.log(respuesta)
+input.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    button.click();
+  }
+});
 //logica de poner respuesta de BOT en chat(inicio)
 //logica de poner respuesta de BOT en chat(fin)
-    }
-  });
+
 //logica para obtener los valores del input(fin)-->
 
 
@@ -28,7 +30,7 @@
 
 // función para leer el archivo JSON
 function getResponse() {
-    fetch("../templates/response.json")
+  fetch("/static/response.json")
       .then(response => response.json())
       .then(data => {
         // mostrar respuesta en el chatbot
@@ -59,12 +61,12 @@ function getResponse() {
       if (this.readyState === 4 && this.status === 200) {
         const response = JSON.parse(this.responseText)["respuesta"];
         update_chat(response);
-        console.log("respuesta de bot enviada correctamente")
-      } else{console.log("error al mandar la respuesta del bot")}
+        console.log("respuesta de bot enviada correctamente");
+      } else {
+        console.log("error al mandar la respuesta del bot");
+      }
     };
     xhr.open("POST", "/get_response");
-   // xhr.open("POST", "http://localhost:5000/get_response");
-
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify({ user_input: user_input }));
   }
