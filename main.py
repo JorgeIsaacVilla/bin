@@ -467,7 +467,7 @@ def check_all_messages(message):
         single_response=True,
     )
     response(
-        "es proactivo, utiliza todos los recursos que le brindes, al 100% sabe sacarle probecho a todos en cuanto se lo permitan.",
+        "es proactivo, utiliza todos los recursos que le brindes, al 100% sabe sacarle provecho a todos en cuanto se lo permitan.",
         ["cuales", "fortalezas", "tiene", "jorge"],
         single_response=True,
     )

@@ -1,8 +1,34 @@
+//logica para obtener los valores del input(inicio)-->
+
+  const input = document.getElementById("user-input");
+  const button = document.getElementById("submit-btn");
+
+  button.addEventListener("click", function () {
+    const user_input = input.value;
+    send_message(user_input);
+    input.value = "";
+//logica de poner respuesta de usuario en chat(inicio)
+//logica de poner respuesta de usuario en chat(fin)
+
+  });
+
+  input.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      button.click();
+      console.log(respuesta)
+//logica de poner respuesta de BOT en chat(inicio)
+//logica de poner respuesta de BOT en chat(fin)
+    }
+  });
+//logica para obtener los valores del input(fin)-->
+
+
 //var url = "http://localhost:5000/get_response";
 
 // función para leer el archivo JSON
 function getResponse() {
-    fetch('../response.json')
+    fetch("../templates/response.json")
       .then(response => response.json())
       .then(data => {
         // mostrar respuesta en el chatbot
@@ -43,3 +69,19 @@ function getResponse() {
     xhr.send(JSON.stringify({ user_input: user_input }));
   }
  //Codigo que indica por consola si el user_input fue mandado correctamente al servidor(fin)
+
+ //Movimiento de los ojos (inicio)
+document.querySelector("body").addEventListener
+("mousemove", eyeball);
+
+function eyeball(){
+var eye = document.querySelectorAll(".eye");
+eye.forEach(function(eye) {
+let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+let y = eye.getBoundingClientRect().top + eye.clientHeight / 2; 
+let radian = Math.atan2(event.pageX-x, event.pageY - y); 
+
+let rot = radian * (180 / Math.PI) * -1 + 270;
+eye.style.transform = "rotate(" + rot + "deg)";  });  
+}
+//Movimiento de los ojos (fin)
