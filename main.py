@@ -9,7 +9,6 @@ def get_response(user_input):
     response = check_all_messages(split_message)
     return response
 
-
 def message_probability(
     user_message, recognized_words, single_response=False, required_word=[]
 ):
@@ -590,6 +589,12 @@ with open("./response.json", "w") as f:
     json.dump({"respuesta": respuesta}, f)
 
 
+respuesta_bot = None
 while True:
-    print("--------------------------------------------------------------------")
-    print("Bin: " + get_response(input("Usted: ")))
+    user_input = input("Usted: ")
+    response = get_response(user_input)
+    print("Bin:", response)
+    respuesta_bot = response
+#while True:
+    #print("--------------------------------------------------------------------")
+    #print("Bin: " + get_response(input("Usted: ")))

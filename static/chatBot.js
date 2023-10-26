@@ -12,12 +12,12 @@ button.addEventListener("click", function (event) {
 //logica de poner respuesta de usuario en chat(inicio)
 //logica de poner respuesta de usuario en chat(fin)
 
-input.addEventListener("keyup", function (event) {
+/*input.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     button.click();
   }
-});
+});*/
 //logica de poner respuesta de BOT en chat(inicio)
 //logica de poner respuesta de BOT en chat(fin)
 
