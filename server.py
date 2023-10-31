@@ -43,7 +43,7 @@ def check_all_messages(message):
         highest_prob[bot_response] = message_probability(
             message, list_of_words, single_response, required_words
         )
-#anexar toda la logica de chat (inicio)
+#---------------------------------------------------Acá esta toda la mente de BIN (inicio)------------------------------------------------
     response(
         "Hola, en que puedo ayudarte?",
         ["hola", "buenas", "holis", "hi"],
@@ -585,6 +585,7 @@ def unknown():
     return response
 
 # Estructura conversaciónal de bin (FIN)
+#---------------------------------------------------Acá esta toda la mente de BIN (FIN)------------------------------------------------
 
 # Ruta para cargar la plantilla HTML (inicio)
 @app.route("/")
@@ -595,7 +596,7 @@ def template():
 @app.route("/get_response", methods=["POST"])
 def process_request():
     user_input = request.json.get("user_input", "")
-    print("Respuesta del usuario:", user_input)
+    #print("Respuesta del usuario:", user_input)
 
     response_text = get_response(user_input)
 

@@ -43,7 +43,7 @@ def check_all_messages(message):
         # saludos (Inicio)
 
     response(
-        "Hola, en que puedo ayudarte?",
+        "Hola, que tal?",
         ["hola", "buenas", "holis", "hi"],
         single_response=True,
     )
@@ -213,7 +213,7 @@ def check_all_messages(message):
     )
     response(
         "cuidate, que te vaya muy bien.",
-        ["muy", "vaya", "bien"],
+        ["vaya", "bien"],
         single_response=True,
     )
     response(
