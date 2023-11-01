@@ -178,8 +178,7 @@ p{
   
   .chat-message p {
     margin: 0;
-    padding: 10px;
-    max-width: 70%;
+    max-width: 88%;
     word-wrap: break-word;
   }
   .bot{
@@ -235,7 +234,10 @@ p{
       }
     .chat-input button{
         width: 150px;
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.5rem;
     }
   }
   

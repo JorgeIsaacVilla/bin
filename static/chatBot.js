@@ -27,7 +27,6 @@ function getResponse() {
   // llamar a la función para leer el archivo JSON cada 5 segundos
   setInterval(getResponse, 5000);
 
-
   function update_chat(response) {
     const chat_container = document.getElementById("chat-container");
 
