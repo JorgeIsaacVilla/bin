@@ -1,3 +1,5 @@
+
+# A very simple Flask Hello World app for you to get started with...
 import random
 import re
 import json
@@ -5,12 +7,24 @@ from flask import Flask, request, render_template, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 
+
 app = Flask(__name__)
 CORS(app)
 
 # Carga de datos
-with open("response.json", "r") as file:
+#with open("/static/response.json", "r") as file:
+    #response = json.load(file)
+#nueva Logica (inicio)------*************---------------****************-------
+current_directory = os.path.dirname(os.path.realpath(__file__))
+
+# Obtiene la ruta completa al archivo "response.json"
+response_file_path = os.path.join(current_directory, "response.json")
+
+# Abre el archivo
+with open(response_file_path, "r") as file:
     response = json.load(file)
+#nueva logica (fin)----------*****************-----------------*************---
+
 
 def get_response(user_input):
     split_message = re.split(r"\s|[,:;.?!-_]\s*", user_input.lower())

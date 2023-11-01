@@ -28,7 +28,7 @@ button.addEventListener("click", function (event) {
 
 // función para leer el archivo JSON
 function getResponse() {
-  fetch("/static/response.json")
+  fetch("../response.json") //se modifico esta linea****-----------*----->>>>>
       .then(response => response.json())
       .then(data => {
         // mostrar respuesta en el chatbot
@@ -39,7 +39,7 @@ function getResponse() {
         chat.appendChild(respuesta);
       });
   }
-  
+
   // llamar a la función para leer el archivo JSON cada 5 segundos
   setInterval(getResponse, 5000);
 
@@ -52,7 +52,7 @@ function getResponse() {
     new_message.innerHTML = "<p>" + response + "</p>";
     chat_container.appendChild(new_message);
   }
-  
+
   function send_message(user_input) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -78,10 +78,10 @@ function eyeball(){
 var eye = document.querySelectorAll(".eye");
 eye.forEach(function(eye) {
 let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-let y = eye.getBoundingClientRect().top + eye.clientHeight / 2; 
-let radian = Math.atan2(event.pageX-x, event.pageY - y); 
+let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+let radian = Math.atan2(event.pageX-x, event.pageY - y);
 
 let rot = radian * (180 / Math.PI) * -1 + 270;
-eye.style.transform = "rotate(" + rot + "deg)";  });  
+eye.style.transform = "rotate(" + rot + "deg)";  });
 }
 //Movimiento de los ojos (fin)
