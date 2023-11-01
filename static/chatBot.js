@@ -7,24 +7,8 @@ button.addEventListener("click", function (event) {
   event.preventDefault(); // Evitar que se recargue la página
   const user_input = input.value;
   send_message(user_input);
-  input.value = "";
+  //input.value = "";
 });
-//logica de poner respuesta de usuario en chat(inicio)
-//logica de poner respuesta de usuario en chat(fin)
-
-/*input.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    button.click();
-  }
-});*/
-//logica de poner respuesta de BOT en chat(inicio)
-//logica de poner respuesta de BOT en chat(fin)
-
-//logica para obtener los valores del input(fin)-->
-
-
-//var url = "http://localhost:5000/get_response";
 
 // función para leer el archivo JSON
 function getResponse() {
@@ -46,11 +30,28 @@ function getResponse() {
 
   function update_chat(response) {
     const chat_container = document.getElementById("chat-container");
+
+    const push_user_text = document.createElement('div');
+    push_user_text.classList.add('chat-message');
+    push_user_text.classList.add('user');
+    const user_text = document.createElement('p');
+    user_text.innerText = input.value;
+    push_user_text.appendChild(user_text);
+    
     const new_message = document.createElement("div");
     new_message.classList.add("chat-message");
     new_message.classList.add("bot");
-    new_message.innerHTML = "<p>" + response + "</p>";
+    new_message.innerHTML = "<p>" + response +"</p>";
+
+    chat_container.appendChild(push_user_text);
     chat_container.appendChild(new_message);
+
+      // Desplazar scroll hacia abajo (inicio)
+    const chatBox = document.querySelector('.chat-box');
+    chatBox.scrollTop = chatBox.scrollHeight;
+    // Desplazar scroll hacia abajo (fin)
+
+    input.value = ""
   }
 
   function send_message(user_input) {

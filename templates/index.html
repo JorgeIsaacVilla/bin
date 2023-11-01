@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/style.css" />
   <title>Bin curioso ✨</title>
+
+  <link rel="shortcut icon" href="../static/img/bin.ico" type="image/x-icon">
 
 </head>
 
@@ -29,29 +31,26 @@
           </div>
           <div class="ear"></div>
       </div>
-  </div>
+    </div>
 
     <div class="chat-container">
       <div class="chat-header">
-        <h2>BIN</h2>
+        <h2> 😮 ☽ ♪♪♫ ⚙◄ <strong>B I N</strong> ►⚙ ♫♪♪ ☽ 😁</h2>
       </div>
 
       <div class="chat-box" id="chat-form" >
-        <div class="chat-message" id="chat-container">
-          <p style="margin-bottom: 16px;">Hola, ¿en que puedo ayudarte?</p>
-        </div>
-        <div class="chat-message user">
-          <p>respuesta del usuario</p>
+        <div class="chat-message bot" id="chat-container">
+          <p style="margin-bottom: 16px;">Hola, mucho gusto!. mi nombre es Bin! 😁</p>
         </div>
       </div>
 
       <form class="chat-input" action="/get_response" method="POST">
         <input type="text" name="user_input" id="user-input" placeholder="Escribe tu mensaje aquí...">
-        <button type="submit" id="submit-btn">Enviar</button>
+        <button type="submit" id="submit-btn">ENVIAR</button>
       </form>
 
          <script src="{{ url_for('static', filename='chatBot.js') }}"></script> <!--se actualizo esta línea-->
-        <!--<script src="../static/chatBot.js"></script> -->
+         
     </div>
 
   </body>

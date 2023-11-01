@@ -7,7 +7,6 @@ from flask import Flask, request, render_template, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 
-
 app = Flask(__name__)
 CORS(app)
 
@@ -23,8 +22,7 @@ response_file_path = os.path.join(current_directory, "response.json")
 # Abre el archivo
 with open(response_file_path, "r") as file:
     response = json.load(file)
-#nueva logica (fin)----------*****************-----------------*************---
-
+#nueva logica (fin)--------*************---------------****************-------
 
 def get_response(user_input):
     split_message = re.split(r"\s|[,:;.?!-_]\s*", user_input.lower())

@@ -1,7 +1,7 @@
 
 @font-face{
     font-family: 'arcade';
-    src: url('./font/ARCADE_N.TTF');
+    src: url('./font/RetroGaming.ttf');
 }
 * {  margin: 0; 
     padding: 0; 
@@ -20,6 +20,9 @@ body {
 html{
     font-family: arcade;
     font-size: 62.5%;
+}
+p{
+  font-size: 2rem;
 }
 
 .top{
@@ -147,9 +150,13 @@ html{
   }
   
   .chat-header {
-    background-color: #2c3e50;
     color: white;
     padding: 10px;
+    color:  rgb(0, 255, 191);
+
+    display: flex;
+    justify-content: center;
+    border: 1PX  rgb(0, 255, 191) solid;
   }
   
   .chat-box {
@@ -172,16 +179,21 @@ html{
   .chat-message p {
     margin: 0;
     padding: 10px;
-    background-color: #f2f2f2;
     max-width: 70%;
     word-wrap: break-word;
+  }
+  .bot{
+    color: #2bff00;
+  }
+  .user{
+    color: yellow;
   }
   
   .chat-input {
     display: flex;
     padding: 10px;
-    background-color: #f2f2f2;
     font-family: arcade;
+    border: 1px  rgb(0, 255, 191) solid;
   }
   
   .chat-input input[type="text"] {
@@ -191,15 +203,31 @@ html{
     border: none;
     margin-right: 10px;
     font-family: arcade;
+    color: aquamarine;
+    background: black;
   }
   
   .chat-input button {
     padding: 5px 10px;
     border: none;
-    background-color: #2c3e50;
+    background: black;
     font-family: arcade;
-    color: white;
+    color: yellow;
     cursor: pointer;
+    border: 1px yellow solid;
+  }
+  .chat-input button:hover {
+    background: rgb(0, 255, 191);
+    color: black;
+  }
+  ::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(0, 255, 191); /* Color de fondo del track (fondo de la barra) */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:  rgb(255, 0, 200); /* Color del "mango" de la barra de desplazamiento */
   }
   @media screen and (max-width: 1023px){
     .chat-container {
