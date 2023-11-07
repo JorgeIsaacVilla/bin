@@ -56,532 +56,487 @@ def check_all_messages(message):
             message, list_of_words, single_response, required_words
         )
 #---------------------------------------------------Acá esta toda la mente de BIN (inicio)------------------------------------------------
+
+#-----------------saludos (inicio)--------------------------------------------------------------------------------------------------------
     response(
-        "Hola, en que puedo ayudarte?",
-        ["hola", "buenas", "holis", "hi"],
-        single_response=True,
+        '¡Hola! ¡Mucho gusto!😮',
+        ['hola', 'buenas', 'holis', 'hi'],
+        single_response=True
     )
 
     response(
-        "Hola, muy bien",
-        ["tal", "vida"],
-        single_response=True,
-    )
-    response(
-        "Todo excelente",
-        ["anda", "vida"],
-        single_response=True,
-    )
-    response(
-        "Todo muy bien, en que te puedo ayudar?",
-        [
-            "bueno",
-            "bien",
-            "cool",
-            "fantastico",
-            "estupendo",
-            "brillante",
-            "wow",
-            "genial",
-        ],
-        single_response=True,
-    )
-    response(
-        "Todo muy bien, jajaja!! =)",
-        ["bien", "mas"],
-        single_response=True,
-    )
-    response(
-        "Todo muy bien. En que puedo servirte?",
-        ["tal", "andas"],
-        single_response=True,
-    )
-    response(
-        "Que te gustaria saber?",
-        ["hay", "ti"],
-        single_response=True,
-    )
-    response(
-        "El planeta sigue girando, asi que creo que todo marcha bien. jajajaja",
-        ["andas", "anda"],
-        single_response=True,
-    )
-    response(
-        "Orale we!! Todo bien We!!",
-        ["tal", "mas", "we", "va"],
-        single_response=True,
-    )
-    response(
-        "Mi creador sigue progresando a pasos agigantados. ¿Qué te gustaría saber sobre él?",
-        ["paso", "ahí"],
-        single_response=True,
-    )
-    response(
-        "Hola, continuamos progresando listos para resolver el mundo. ¿En qué te puedo servir?",
-        ["buenas", "sigues"],
-        single_response=True,
-    )
-    response(
-        "¡Hola, que gusto tu visita!, ¿en qué te puedo ayudar?",
-        ["buenos", "días"],
-        single_response=True,
-    )
-    response(
-        "¡me alegro mucho! ¿en qué te puedo ayudar?",
-        ["muy", "bien", "gracias", "excelente"],
-        single_response=True,
-    )
-    response(
-        "¡muy bien!, ¿en qué te puedo ayudar?",
-        ["estas", "encuentras"],
-        single_response=True,
-    )
-    response(
-        "¡Hola, Buenas tardes!, ¿en qué te puedo ayudar?",
-        ["buenas", "tardes", "placer"],
-        single_response=True,
-    )
-    response(
-        "¡Hola, Buenas noches!, ¿en qué te puedo ayudar?",
-        ["buenas", "noches", "bien"],
-        single_response=True,
-    )
-    response(
-        "I am fine, ¿and you?",
-        ["hello", "tal"],
-        single_response=True,
-    )
-    response(
-        "hola, si todo bien. Gracias por preguntar!",
-        ["helow", "men", "bien"],
-        single_response=True,
-    )
-    response(
-        "¡Estoy yo, para resolver cualquier cosa que necesites saber de mi creador! =P",
-        ["konichiwa", "hay", "por"],
-        single_response=True,
-    )
-    response(
-        "todo muy bien, gracias a Dios. ¿Necesitas que te ayude en algo?",
-        ["aloja", "bien", "hey"],
-        single_response=True,
-    )
-    response(
-        "hola, todo muy bien.",
-        ["jola", "komo", "sta"],
-        single_response=True,
-    )
-    response(
-        "tengo un mundo de información sobre mi creador que apuesto quieres saber! =)",
-        ["hoka", "tienes", "ahi"],
-        single_response=True,
-    )
-    response(
-        "hola, las ultimas novedades de mi creador puedes verlos en las secciones de esta pagina.",
-        ["kola", "hay", "nuevo"],
-        single_response=True,
-    )
-    response(
-        "mi creador y yo nos encontramos muy bien.",
-        ["hola", "omo", "esta", "to2"],
-        single_response=True,
-    )
-    response(
-        "que onda bro?",
-        ["ke", "onda", "we", "men"],
-        single_response=True,
+        '¿Yo? Nada, lo de siempre jajaja😁',
+        ['estás', 'sientes', 'cuentas', 'pasando'],
+        single_response=True
     )
 
     response(
-        "preguntame lo que necesites saber de mi creador!! <3",
-        ["tienes", "para", "contar", "mi", "contarme"],
-        single_response=True,
+        'Sí, es lo mejor.❤',
+        ['bien', 'bueno', 'excelente', 'genial'],
+        single_response=True
     )
 
-    # saludos (Fin)
-    # despedida(inicio)
+#-----------------saludos (fin)-----------------------------------------------------------------------------------------------------------
+
+#-----------------groserias (inicio)------------------------------------------------------------------------------------------------------
     response(
-        "ya te vas?, bueno. Chao!! =(",
-        ["chao", "bay", "adios", "chaito"],
-        single_response=False,
-    )
-    response(
-        "Chaito! ;)",
-        ["chau"],
-        single_response=True,
-    )
-    response(
-        "muchas gracias, igualmente, chao!!!",
-        ["cuidate", "saludos", "bendiciones", "placer"],
-        single_response=True,
-    )
-    response(
-        "chao! Espero que regreses pronto!",
-        ["mañana", "hasta", "pronto", "luego"],
-        single_response=True,
-    )
-    response(
-        "en teoria no puedo ver, jajajaja pero entendi la idea XD chao!!",
-        ["chao", "bay", "adios", "chaito"],
-        single_response=False,
-    )
-    response(
-        "cuidate, que te vaya muy bien.",
-        ["muy", "vaya", "bien"],
-        single_response=True,
-    )
-    response(
-        "espero que regreses pronto! <3",
-        ["hasta", "próxima", "amigo"],
-        single_response=True,
-    )
-    response(
-        "hasta la vista baby (¬.¬) tata, ta tata…!!!",
-        ["hasta", "vista", "baby"],
-        single_response=True,
-    )
-    response(
-        "porque? =( aun no hemos hablado lo mas importante. Lo que te puede ofrecer mi creador!! =)",
-        ["me ", "tengo", "ir"],
-        single_response=True,
-    )
-    response(
-        "dale, pero no olvides contactarte con mi creador, el tiene mucho para ofrecerte, si no, mirame a mi!! =P",
-        ["ya", "me", "voy", "pronto"],
-        single_response=True,
+        '¡Qué grosero eres! 😣',
+        ['hp', 'hijueputa', 'huevón', 'bobo'],
+        single_response=True
     )
 
-    # despedida (Fin)
-    # groserias (inicio)
     response(
-        "que grosero eres! =(",
-        ["hp", "hijueputa", "huevon", "bobo"],
-        single_response=True,
-    )
-    response(
-        "no puedo creer que alguien tan hermoso, diga cosas feas. =(",
-        ["tonto", "idiota", "lerdo", "marica"],
-        single_response=False,
-    )
-    response(
-        "aun no puedo hacer mucho! =( pero a mi credor le importo, y es suficiente para mi.",
-        ["mk", "cerdo", "cafetera", "bruto"],
-        single_response=True,
-    )
-    response(
-        "no ofendas asi! eso esta mal! (>.<)",
-        ["tonto", "idiota", "lerdo", "marica"],
-        single_response=False,
-    )
-    response(
-        "el es una persona de Dios, y tu eres un grosero",
-        ["gey"],
-        single_response=True,
-    )
-    response(
-        "vamos a ver quien rie al final. =(",
-        ["gay"],
-        single_response=True,
-    )
-    response(
-        "ya basta de groserias por favor!=(",
-        ["mk"],
-        single_response=True,
-    )
-    response(
-        "no es apropiado que digas eso! =(",
-        ["mama", "huevo", "mama", "uevo"],
-        single_response=True,
-    )
-    response(
-        "no puedo creer que alguien que dice ser civilizado diga cosas como esas! =( ",
-        ["idiota", "cabeza", "hueca", "caremonda"],
-        single_response=True,
-    )
-    response(
-        "eres una persona grosera y desagradable! =/",
-        ["care", "monda", "baboso"],
-        single_response=True,
-    )
-    response(
-        "que desagradable eres por hablar asi! =(",
-        ["verga", "puto"],
-        single_response=True,
-    )
-    response(
-        "deberia darte vergüenza las cosas que dices.",
-        ["pija", "puta"],
-        single_response=True,
-    )
-    response(
-        "no tienes, escrupulos! =(",
-        ["masca", "pija", "verga", "monda"],
-        single_response=True,
-    )
-    response(
-        "tus papas te enseñaron bien? Preguntate eso! =)",
-        ["giripolla", "malparido", "mama", "huevo"],
-        single_response=True,
-    )
-    response(
-        "tu lenguaje no es adecuado! =/",
-        ["mama", "uevo", "chupa", "media"],
-        single_response=True,
-    )
-    response(
-        "arriba hay un Dios, que para abajo ve! =)",
-        ["burro", "baboso", "cafre", "loca"],
-        single_response=True,
-    )
-    response(
-        "las groserias son reflejo de la falta de inteligencia. (>.<)",
-        ["puta", "perra"],
-        single_response=True,
+        'No puedo creer que alguien tan hermoso diga cosas feas.😫',
+        ['tonto', 'idiota', 'lerdo', 'marica'],
+        single_response=True
     )
 
-    # groserias (fin)
-    # sobre jorge Villa (inicio)
     response(
-        "En el momento esta trabajando en desarrollo como independiente, pero esta ansioso de trabajar en una empresa que lo ayude a desarrollarse como programador.",
-        ["trabaja", "labora", "jorge", "esta", "trabajando"],
-        single_response=True,
-    )
-    response(
-        "puedes buscarlo en linkding: https://www.linkedin.com/in/jorge-villa-lopez-742647b5/",
-        [
-            "contacto",
-            "encontrar",
-            "contactar",
-            "linkding",
-            "jorge",
-        ],
-        single_response=True,
-    )
-    response(
-        "claro, su numero es 3218828546 y su linkding es:  https://www.linkedin.com/in/jorge-villa-lopez-742647b5/ ",
-        ["pasame", "como lo", "donde", "numero", "contacto"],
-        single_response=True,
-    )
-    response(
-        "Muchas gracias",
-        ["pero", "bien", "me", "alegro"],
-        single_response=True,
-    )
-    response(
-        "el nombre de mi programador se llama jorge isaac villa lopez",
-        [
-            "llama",
-            "programador",
-            "desarrollador",
-            "empecemos",
-            "nombre",
-        ],
-        single_response=True,
-    )
-    response(
-        "Todo excelente",
-        ["llama", "programador", "desarrollador", "nombre"],
-        single_response=True,
-    )
-    response(
-        "Mi programador es una persona honesta, inteligente, que no se conforma con injusticias, y siempre busca la manera de ayudar a las personas con lo que es, y con lo que tiene.",
-        ["quien", "programador"],
-        single_response=True,
-    )
-    response(
-        "Dime, exactamente que quieres saber de mi programador?",
-        ["quiero", "saber", "programador"],
-        single_response=True,
-    )
-    response(
-        "Mi programador se llama Jorge isaac villa lopez, de seguro esta ansioso de conocerte. =)",
-        ["llama", "programador"],
-        single_response=True,
-    )
-    response(
-        "Mi programador hace muchas cosas. El es ingeniero eléctrico, es desarrollador, musico, astrónomo aficionado, y es esposo <3",
-        [
-            "hace",
-            "jorge",
-            "programador",
-            "dedica",
-            "profesion",
-            "profesión",
-            "estudio",
-            "estudia",
-        ],
-        single_response=True,
-    )
-    response(
-        "Mi programador se llama Jorge isaac villa lopez, de seguro esta ansioso de conocerte. =)",
-        ["es el", "nombre", "desarrollador"],
-        single_response=True,
-    )
-    response(
-        "Me desarrollo Jorge isaac villa lopez, te sugiero mucho que lo contactes, es de los que no se rinde hasta lograr los objetivos. ¡Si no mírame a mí! =)",
-        ["quien", "desarrollo", "programo"],
-        single_response=True,
-    )
-    response(
-        "Me desarrollo Jorge isaac villa lopez, te sugiero mucho que lo contactes, es de los que no se rinde hasta lograr los objetivos. ¡Si no mírame a mí! =)",
-        ["trabaja", "programador", "desarrollador"],
-        single_response=True,
-    )
-    response(
-        "El estudio ingeniería eléctrica, pero a lo largo de su carrera adquirido habilidades de programación, hasta el punto que pudo automatizar procesos de estudios y procesos muy complejos haciéndolo cada vez más competitivo. Y estudio tambien desarrollo enfocado en web, manejando React, Angular, Worpress, PHP, HTML, CSS, JS, entre otros",
-        ["estudia", "estudio", "jorge"],
-        single_response=True,
-    )
-    response(
-        "Mi programador estudio para ser desarrollador Frontend principalmente, ingeniería eléctrica, y docencia en matemática, física y música.",
-        [
-            "carrera",
-            "jorge",
-            "desarrollador",
-            "profesion",
-            "profesión",
-            "tiene",
-            "enfasis",
-            "estudios",
-        ],
-        single_response=True,
-    )
-    response(
-        "React, Angular, Worpress, HTML, CSS, JS, Python, PHP entre otros como excel, autocad, y elementos de renderizado 3D enfocado a ingenieria.",
-        [
-            "cuales",
-            "herramientas",
-            "conoce",
-            "jorge",
-            "programador",
-            "tecnologias",
-            "conoce",
-            "programa",
-            "lenguaje",
-            "lenguajes",
-            "programacion",
-            "programación",
-        ],
-        single_response=True,
-    )
-    response(
-        "mi programador es melancolico colerico, es en ocaciones perfeccionista, y se exige a si mismo siempre, siempre esta en constante mejora de sus defectos, y fortaleciendo sus habilidades. una persona agradable, el no habla mucho, pero cuando se lo permiten, puede ser dibertido. Es colaborador, y le gusta ayudar a las personas.",
-        ["personalidad", "tiene", "jorge", "forma", "ser"],
-        single_response=True,
-    )
-    response(
-        "le gusta la musica clasica, el pop Rock, bachata, salsa, merengue, pero tambien le gusta la astronomia, y tocar instrumentos musicales",
-        ["cuales", "gustos", "tiene", "jorge"],
-        single_response=True,
-    )
-    response(
-        "se desanima muy rapido, aunque esta en constante automotivación, al comienzo se le dificulta entender las cosas, pero luego de estudiar el tema y familiarizarse mas, llega a ser el mejor en lo que hace.",
-        ["cuales", "debilidades", "tiene", "jorge"],
-        single_response=True,
-    )
-    response(
-        "es proactivo, utiliza todos los recursos que le brindes, al 100% sabe sacarle provecho a todos en cuanto se lo permitan.",
-        ["cuales", "fortalezas", "tiene", "jorge"],
-        single_response=True,
-    )
-    response(
-        "es casado, tiene sueños y metas como todos, pero deberias llamarlo y preguntarle tu mismo! =)",
-        ["algo", "deberia", "saber", "jorge"],
-        single_response=True,
-    )
-    response(
-        "a el le gustaria trabajar de Frontend porque le gusta el arte, y el tiene la habilidad de hacer todo lo que el diseñador propone, tal cual como lo plantea. Considero que es algo dificil de lograr. Y no todos los desarrolladores Frontend lo logran.!! =/",
-        ["quiere", "hacer", "jorge"],
-        single_response=True,
-    )
-    response(
-        "Mi programador ahora mismo vive en  / Atlantico - Barranquilla",
-        ["vive", "jorge", "programador", "donde", "parte"],
-        single_response=True,
-    )
-    response(
-        "como todos los seres humanos, el aspira a mejorar la calidad de vida de sus seres queridos, y quiere dedicarse a algo mas enfocado al arte!! =) para el los numeros, la programación y todo lo que hace un Diseñador es arte, y quiere ser participe de eso.",
-        ["porque", "cambio", "carrera"],
-        single_response=True,
-    )
-    response(
-        "el aspira a ganar $2.500.000 =)",
-        ["aspiracion", "salarial", "aspira", "ganar"],
-        single_response=True,
-    )
-    response(
-        "si, digame, que necesitas",
-        ["podrias", "ayudarme", "algo"],
-        single_response=True,
-    )
-    response(
-        "Mi programador maneja B1, y se esta esforzando por mejorar mucho mas! =)",
-        ["habla ingles", "ingles", "nivel", "idiomas"],
-        single_response=True,
-    )
-    response(
-        "guitarra, bajo, piano, acordeon, ocarina, armonica, bateria, saxofon puedes verlo en tiktok si deseas: https://www.tiktok.com/@jorgevillamusic?lang=esl",
-        ["instrumentos", "musicales", "toca"],
-        single_response=True,
-    )
-    response(
-        "ufff!! A visto de todo. Siguelo en su canal de TIKTOK como Enycosmic: https://www.tiktok.com/@enycomic?lang=esl",
-        ["cosas", "visto", "astronomico"],
-        single_response=True,
-    )
-    response(
-        "mi programador esta realizando trabajos independiente en desarrollo web, ya pronto actualizara su portafolio virtual. ¡Pero como tal en empresa, todavia no! =(  pero esta muy ansioso de trabajar contigo! =) de seguro que si.",
-        ["tiene", "experiencia", "programacion", "desarrollo"],
-        single_response=True,
-    )
-    response(
-        "mi programador a tenido el privilegio de que lo contacten para hacer desarrollo frontend con Worpress, React y HTML, CSS, JS para diseño de landing pages, entre otros tipos de paginas informativas. Pero el puede hacer de todo. 3D, y todo tipo de animaciones que le pongan los diseñadores.",
-        ["experiencia", "tiene"],
-        single_response=True,
-    )
-    response(
-        "mi programador nacio en el año de 1993",
-        [
-            "edad",
-            "tiene",
-            "jorge",
-            "cuantos",
-            "años",
-            "tiene",
-            "jorge",
-            "edad",
-            "es la",
-        ],
-        single_response=True,
-    )
-    response(
-        "mi programador, no tiene ningun problema con el trabajo presencial, el cree que es lo mejor, para asi absorber todo el conocimiento de sus colegas.",
-        ["puede", "trabajar", "presencial", "trabajo"],
-        single_response=True,
-    )
-    response(
-        "mi programador prefiere remoto, pero no tiene problemas con que sea presencial.",
-        ["prefiere", "trabajar", "trabajo"],
-        single_response=True,
+        '¡Ya basta de groserías por favor! 😐',
+        ['mk', 'cerdo', 'cafetera', 'bruto'],
+        single_response=True
     )
 
-    # sobre jorge villa (fin)
+    response(
+        'No es apropiado que digas eso. 😢',
+        ['gay', 'creador', 'gay', 'marica'],
+        single_response=True
+    )
 
     response(
-        "Estoy bien y tu?",
-        ["estas", "va", "vas", "sientes"],
-        single_response=True,
+        'Eres una persona grosera. 😢',
+        ['mk', 'creador', 'mama', 'gay'],
+        single_response=True
+    )
+
+    response(
+        'Debería darte vergüenza las cosas que dices. 😓',
+        ['huevo', 'creador', 'huevo', 'gay'],
+        single_response=True
+    )
+
+    response(
+        'No tienes escrúpulos. 😢',
+        ['puto', 'creador', 'baboso', 'mk'],
+        single_response=True
+    )
+
+    response(
+        '¿Tus papás te enseñaron bien? Pregúntate eso. 🤨',
+        ['mama', 'huevo', 'mama', 'huevo'],
+        single_response=True
+    )
+
+    response(
+        'Espero que podamos encontrar una forma de hablar más bonita.😊',
+        ['idiota', 'cabeza', 'hueca', 'caremonda'],
+        single_response=True
+    )
+
+    response(
+        'No me gusta cuando decimos cosas malas.😊',
+        ['verga', 'monda', 'coma', 'baboso'],
+        single_response=True
+    )
+
+    response(
+        '¡Ay!😮 Es mejor hablar con respeto.😒',
+        ['hp', 'hijueputa', 'huevón', 'bobo'],
+        single_response=True
+    )
+
+    response(
+        'Podemos hablar amigablemente, ¿sí?😊',
+        ['tonto', 'idiota', 'lerdo', 'marica'],
+        single_response=True
+    )
+
+    response(
+        '¿Por qué dices cosas feas?😊',
+        ['mk', 'cerdo', 'cafetera', 'idiota'],
+        single_response=True
+    )
+
+    response(
+        'No me gusta cuando hablas así. 😖',
+        ['burro', 'gilipolla', 'cafre', 'giripoya'],
+        single_response=True
+    )
+
+    response(
+        'Eso no fue bueno lo que dijiste.😣',
+        ['caremonda', 'puto', 'puta', 'baboso'],
+        single_response=True
+    )
+
+#-----------------groserias (fin)---------------------------------------------------------------------------------------------------------
+
+#-----------------sobre autor de desarrollo (inicio)*-------------------------------------------------------------------------------------
+    response(
+        'Mi creador es una persona buena, inteligente, le gusta mucho estudiar y ayudar a las personas.😊',
+        ['háblame', 'jorge', 'programador', 'coméntame'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador se llama Jorge Isaac Villa López, ¡seguro está ansioso de conocerte! 😊',
+        ['llama', 'nombre', 'creador', 'programador'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador hace muchas cosas.😲 Él es ingeniero eléctrico, desarrollador web, músico, astrónomo aficionado y esposo.🤗',
+        ['hacer', 'profesión', 'dedica', 'estudia'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador trabaja con React, Angular, WordPress, HTML, CSS, JS, Python, PHP, entre otros, así como Excel, AutoCAD y elementos de renderizado 3D enfocados a ingeniería.',
+        ['tecnologías', 'tecnología', 'maneja', 'sabe'],
+        single_response=True
+    )
+
+    response(
+        'Me desarrolló Jorge Isaac Villa López,😊 te sugiero mucho que lo contactes. Es de los que no se rinde hasta lograr los objetivos. ¡Si no, mírame a mí! 😎🎸',
+        ['desarrollo', 'creó', 'programó', 'hizo'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador Jorge estudió ingeniería eléctrica, pero a lo largo de su carrera adquirió habilidades de programación, hasta el punto en que pudo automatizar procesos de estudios y procesos muy complejos, haciéndolo cada vez más competitivo. También estudió desarrollo enfocado en web.',
+        ['estudio', 'estudios', 'preparación', 'trabajó'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador estudió para ser desarrollador Frontend principalmente, además de ingeniería eléctrica y docencia en matemáticas, física y música.',
+        ['carreras', 'estudios', 'estudio', 'jorge'],
+        single_response=True
+    )
+
+    response(
+        'Una persona agradable,😊 él no habla mucho, pero cuando se lo permiten, puede ser divertido. Es colaborador y le gusta ayudar a las personas.',
+        ['personalidad', 'describe', 'describir', 'jorge'],
+        single_response=True
+    )
+
+    response(
+        'Le gusta la música clásica, el pop rock, bachata, salsa, merengue, pero también le gusta la astronomía y tocar instrumentos musicales. 🎶🎸🎹🎺🎤🌌',
+        ['gusta', 'jorge', 'gustos', 'prefiere'],
+        single_response=True
+    )
+
+    response(
+        'Se desanima muy rápido, aunque está en constante automotivación. Al comienzo se le dificulta entender las cosas, pero luego de estudiar el tema y familiarizarse más, llega a ser el mejor en lo que hace. 💪📚🔍',
+        ['deficiencia', 'debilidades', 'cosas', 'negativas'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador nació en el año 1993.',
+        ['edad', 'años', 'jorge', 'nació'],
+        single_response=True
+    )
+
+    response(
+        'Él ahora mismo vive en Barranquilla, Colombia.',
+        ['vive', 'ubicado', 'país', 'ciudad'],
+        single_response=True
+    )
+
+    response(
+        'Él te manda a decir que aspira a un salario de $2.500.000.',
+        ['aspira', 'ganar', 'salario', 'quiere'],
+        single_response=True
+    )
+
+    response(
+        'Mi creador toca diferentes instrumentos musicales como Guitarra, bajo, piano, acordeón, ocarina, armónica, batería, saxofón. 🎸🎹🥁🎷',
+        ['instrumentos', 'musicales', 'música', 'toca'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
+        ['trabajando', 'laborando', 'empleado', 'empresa'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador no tiene ningún problema con el trabajo presencial. Él cree que es lo mejor para así absorber todo el conocimiento de sus colegas. 💡👥',
+        ['presencial', 'remoto', 'trabajar', 'híbrido'],
+        single_response=True
+    )
+
+    response(
+    "Puedes contactar a mi creador por WhatsApp y LinkedIn en la barra de inicio.",
+    ['contacto', 'contactar', 'buscar', 'encontrar',"programador"],
+    single_response=True
+    )
+
+    response(
+        "Puedes contactar a mi creador en el número +57 321 882 8546 de Colombia.",
+        ['telefono', 'numero', 'contacto', 'llamar',"programador", 'contactar',],
+        single_response=True
+    )
+
+#-----------------sobre autor de desarrollo (fin)*----------------------------------------------------------------------------------------
+
+#-----------------temas (inicio)----------------------------------------------------------------------------------------------------------
+    response(
+        'Mi creador toca diferentes instrumentos musicales como Guitarra, bajo, piano, acordeón, ocarina, armónica, batería, saxofón. 🎸🎹🥁🎷',
+        ['instrumentos', 'musicales', 'música', 'toca'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
+        ['trabajando', 'laborando', 'empleado', 'empresa'],
+        single_response=True
+    )
+
+    response(
+        'Mi programador no tiene ningún problema con el trabajo presencial. Él cree que es lo mejor para así absorber todo el conocimiento de sus colegas. 💡👥',
+        ['presencial', 'remoto', 'trabajar', 'híbrido'],
+        single_response=True
+    )
+
+#-----------------temas (fin)-------------------------------------------------------------------------------------------------------------
+
+#-----------------sobre BIN (inicio)------------------------------------------------------------------------------------------------------
+    response(
+        'Mi nombre es BIN',
+        ['como', 'llamas', 'cual', 'nombre'],
+        single_response=True
+    )
+
+    response(
+        'Me gusta mucho jugar, de hecho, mi programador me está programando un juego para divertirme contigo. 🎮😄',
+        ['jugar', 'sabes', 'hacer', 'juegos'],
+        single_response=True
+    )
+
+    response(
+        'Si quieres, podemos charlar sobre mi programador, ¡o podemos jugar! 🗣️🎮',
+        ['puedes', 'hacer', 'hablamos', 'jugamos'],
+        single_response=True
+    )
+
+    response(
+        'Me gustan mucho las canciones, especialmente las que toca mi creador. Si quieres, puedes escuchar su música en la sección de documentos. 🎵🎶',
+        ['gusta', 'musica', 'canciones', 'escuchar'],
+        single_response=True
+    )
+
+    response(
+        'Me gustan las fotos del cielo que hace mi creador. Si quieres, puedes verlas en la sección de documentos. 🌌📸',
+        ['gustan', 'fotos', 'cuales', 'cielo'],
+        single_response=True
+    )
+
+    response(
+        'Yo quiero jugar "Biiiinnn Gooolll", pero mi programador aún está programándome un juego. ⚽🎮',
+        ['quieres', 'hacer', 'gustaria', 'jugar'],
+        single_response=True
+    )
+#-----------------sobre BIN (fin)---------------------------------------------------------------------------------------------------------
+
+#-----------------Algoritmo palabra de Dios (inicio)--------------------------------------------------------------------------------------
+    response(
+        "¿Quieres que te vaya bien? Te aconsejo que leas la Biblia todos los días, piensa en lo que aprendes cada vez que la lees. Allí encontrarás lo que necesitarás.",
+        ["incertidumbre", "vida", "claridad", "orientacion",
+        "estres", "ansiedad", "consejo", "calma",
+        "inspiracion", "orientacion", "vida", "sugerencia",
+        "paz interior", "tranquilidad", "cultivar",
+        "superar", "situacion", "dificil", "recurso", "guia",
+        "decisiones", "importantes", "abrumado", "discernir",
+        "proposito", "significado", "consejo",
+        "crecer", "espiritualmente", "empezar", "recomendacion",
+        "errores", "pasado", "redimirme",
+        "desafios", "carrera", "profesional", "direccion"],
+        single_response=True
+    )
+
+    response(
+        "Pero si buscas a Dios de corazón y con toda tu alma desde cualquier situación y lugar en el que estés, lo vas a encontrar.",
+        ["confusion", "espiritual", "conexion", "fe",
+        "perdido", "rumbo", "proposito",
+        "desafios", "guia", "espiritual", "ayudarme",
+        "practicar", "espiritualidad", "comenzar", "consejo",
+        "soledad", "tristeza", "consuelo", "fe",
+        "errores", "pasado", "redimirme", "espiritualidad",
+        "cambio", "estabilidad", "orientacion",
+        "direccion", "vida", "profesional", "discernir", "espiritualidad",
+        "paz", "interior", "tranquilidad", "cultivar", "fe",
+        "respuestas", "preguntas", "vida", "proposito", "espiritualidad"],
+        single_response=True
+    )
+
+    response(
+        "Dios tiene mucha paciencia y es muy compasivo; puede perdonar cualquier error que hayas hecho, y castiga a todos los que hacen lo malo.",
+        ["sentimientos", "culpa", "pasado", "esperanza", "perdon",
+        "cometido", "error", "trabajo", "temo", "consecuencias", "hacer",
+        "sufrimiento", "mundo", "dios", "amoroso", "compasivo", "explicarlo",
+        "escuchado", "siento", "merezco", "opinas",
+        "aprender", "perdonarme", "hecho","paciencia", "compasion",
+        "pasando", "dificil", "perdido", "rumbo", "consuelo", "orientacion", "fe",
+        "significa", "perdonar",
+        "injusticia", "eventualmente", "castigara", "malvados", "ensena"],
+        single_response=True
+    )
+
+    response(
+        "Tranqui! Dios irá contigo y te dará descanso",
+        [
+            "entrevista", "trabajo", "nervioso", "consejo",
+            "familia", "momento", "dificil", "ayudar",
+            "perdida", "ser querido", "consuelo",
+            "abrumado", "presiones", "vida", "encontrar", "paz",
+            "incertidumbre", "claridad", "tranquilidad",
+            "ansiedad", "calma",
+            "proyecto", "estresado", "manejar", "presion",
+            "futuro", "confiar", "dejar",
+            "insomnio", "descansar", "mejorar", "sueño",
+            "decision", "importante", "hacer"
+        ],
+        single_response=True
+    )
+
+    response(
+        "Confía en las promesas de Dios, Él nunca te defraudará.",
+        ["dificil", "consejo",
+        "miedo", "futuro", "tranquilidad",
+        "errores", "pasado", "culpable", "esperanza",
+        "decision", "inseguro",
+        "solo", "consuelo", "confiar",
+        "carrera", "consejo",
+        "perdida", "ser", "querido", "consuelo",
+        "perdido", "rumbo", "orientacion",
+        "fe", "momentos", "dificiles",
+        "desafio", "superarlo"],
+        single_response=True
+    )
+
+    response(
+        "Canta a Dios con alegría, y dale las gracias, porque Él te cuida de situaciones peligrosas.",
+        ["agradecido", "vida", "expresar", "gratitud",
+        "sentimientos", "mejorar",
+        "alegria", "desafios", "enfrentando",
+        "situación", "peligrosa", "mantener", "calma", "esperanza",
+        "miedo", "desconocido", "encontrar", "seguridad", "confianza",
+        "cultivar", "actitud", "gratitud", "consejos", "hacerlo",
+        "alegrarme", "mantener", "actitud", "positiva", "sugerir",
+        "superar", "experiencia", "traumatica", "consejo", "curacion",
+        "familia", "amigos", "mostrarles", "aprecio",
+        "desafios", "trabajo", "sentir", "inseguro", "encontrar", "confianza"],
+        single_response=True
     )
     response(
-        "Estamos ubicados en la calle 23 numero 123",
-        ["ubicados", "direccion", "ubicacion"],
-        single_response=True,
+        "La gente se fija en las apariencias, pero Dios ve el corazón.",
+        ["gente", "juzga", "apariencia", "fisica", "afecte",
+        "momento", "inseguro", "veo", "consejo",
+        "preocupa", "expectativas", "belleza", "sociedad", "inadecuado", "superar",
+        "discapacidad", "visible", "excluido", "valia", "proposito",
+        "errores", "pasado", "temo", "juzgue", "sentimiento", "vergüenza",
+        "proceso", "aceptacion", "cuerpo", "consejos", "ayudarme",
+        "presion", "encajar", "estandares", "valorarme", "interiormente",
+        "burlas", "comentarios", "mantener", "autoestima", "confianza",
+        "enseñar", "hijos", "importancia", "valorar", "interior",
+        "considerando", "cambio", "imagen", "razones", "aconsejarias", "bonito", "lindo", "linda", "bonita"],
+        single_response=True
     )
+
     response(
-        "Siempre a la orden",
-        ["gracias", "thanks"],
-        single_response=True,
+        "Lo que Dios te dice y el camino que dice que camines no se equivoca. Dios es muy fuerte para cuidarte. Abrígate en Él.",
+        ["pregunta", "incertidumbre", "vida", "seguro", "decisión", "correcta",
+        "respuesta", "dios", "camino", "equivoca", "fuerte", "cuidarte", "acogiate",
+        "perdida", "querido", "abrumado", "encontrar", "consuelo",
+        "atrapado", "situación", "dificil", "salir", "hacer",
+        "preocupado", "futuro", "seguridad", "confianza",
+        "proposito", "significado", "consejo", "darias"],
+        single_response=True
     )
+
+    response(
+        "Cree en el Señor tu Dios, no hay otro como Él, Dios cumple sus promesas de amor.",
+        ["pregunta", "momento dificil", "vida", "consuelo",
+        "futuro", "incertidumbre", "encontrar", "esperanza",
+        "errores", "pasado", "perdido", "redención",
+        "propósito", "significado", "consejo", "darías",
+        "ansiedad", "calma",
+        "relacion", "espiritual", "pasos", "seguir"],
+        single_response=True
+    )
+
+    response(
+        "No te preocupes! Dios te liberará de todo lo malo que puedas estar pasando.",
+        ["pregunta", "estres", "trabajo", "superarlo",
+        "respuesta", "dios", "liberará", "malo", "pasando",
+        "error", "importante", "culpable", "esperanza",
+        "salud", "ser querido", "bien",
+        "desafio", "financiero", "salir adelante", "consejo",
+        "situacion", "incertidumbre", "abrumado",
+        "soledad", "tristeza", "consuelo", "fe"],
+        single_response=True
+    )
+
+    response(
+        "Canta a Dios, porque Él es bueno, ¡y su amor es para siempre.",
+        ["pregunta", "tristeza", "encontrar", "consuelo",
+        "respuesta", "canta", "dios", "bueno", "amor", "siempre",
+        "expresar", "gratitud", "bendiciones", "vida", "manera", "significativa",
+        "situacion", "amigo", "celebrando", "logro", "importante", "alegria",
+        "fortalecer", "relación", "espiritual", "actividades", "recomiendas",
+        "necesito", "esperanza", "dificultad", "hacer",
+        "familiar", "cumpleaños", "compartir", "mensaje", "positivo", "seres", "queridos"],
+        single_response=True
+    )
+
+    response(
+        "Si tienes una actitud de humildad, y hablas con Dios, lo buscas, y dejas de hacer lo malo que sea que estés haciendo; Dios te perdonará",
+        ["error", "grave", "culpable", "redención", "adicción", "superarla", "lastimado", "enmendar", "honesto", "camino espiritual",
+        "conectar", "fe", "remordimiento", "acciones pasadas", "liberarse", "confusion", "moral", "decisiones", "consejo",
+        "comportamientos", "agresivos", "compasivo", "regresar", "reconciliarme", "encrucijada", "etica",
+        "orientacion", "proceder", "egoista", "mejor persona", "empezar", "envidia", "superar"],
+        single_response=True
+    )
+
+    response(
+        "Dios está en todas partes, te ve y te cuida porque Él es fiel. Confía.",
+        ["solo", "desamparado", "tristeza", "consuelo", "desafio", "futuro", "seguridad", "orientación", "ansiedad", "calma",
+        "fortaleza", "complicada", "incertidumbre", "apoyo", "perdido", "rumbo", "consejo", "mantener", "fe", "dificiles",
+        "claridad", "tranquilidad"],
+        single_response=True
+    )
+
+    response(
+        "Dios es un papá muy bueno, y si lo prometió, Él lo cumplirá.",
+        ["momento", "difícil", "esperanza", "mejorar", "orando", "solución", "problemas", "dios", "escuchando", "plegarias",
+        "perdido", "rumbo", "ayudar", "preocupado", "futuro", "plan", "cometer errores", "juicio", "perdón", "desafío",
+        "fortaleza", "abrumado", "situación", "pérdida", "dolor", "consuelo", "sanar", "decisión importante", "orientación",
+        "guía", "dirección", "correcta", "dificultades", "camino espiritual", "fortalecer", "fe", "relación", "duda",
+        "incertidumbre", "certeza", "paz"],
+        single_response=True
+    )
+
+    response(
+        "Si tú no haces lo que tienes que hacer, muy seguramente otro lo hará, pero papá Dios puede castigarte. De pronto, estás ahí porque tú eres la persona indicada para hacerlo.",
+        ["dificultades", "cumplir", "responsabilidades", "trabajo", "consejo", "evitando", "tarea", "importante", 
+        "abordarla", "darías", "postergando", "decisión", "preocupa", "impacto", "sensación", "conversación", 
+        "difícil", "querido", "aconsejarías", "pensando", "proyecto", "dudas", "persona adecuada", "opinas"],
+        single_response=True
+    )
+
+    response(
+        "Mi constructor cree que el abuelo Dios vive, y por eso no tiene miedo de lo que pueda pasar, y que algún día verá a Dios, es un anhelo muy profundo su corazón.",
+        ["cree", "Jorge", "programador", "constructor", "creencia", "fe", "incertidumbre", "vida", "seguridad", 
+        "confianza", "perdido", "ser querido", "consuelo", "desafío", "carrera", "abrumado", "consejo", "rumbo", 
+        "orientación", "claridad", "decisión", "crucial", "elegir", "correcto"],
+        single_response=True
+    )
+
+#-----------------Algoritmo palabra de Dios (fin)---------------------------------------------------------------------------------------
+
 
     #anexar toda la logica de chat (fin)
     best_match = max(highest_prob, key=highest_prob.get)
@@ -590,9 +545,9 @@ def check_all_messages(message):
 
 def unknown():
     response = [
-        "Disculpa. ¿puedes decirlo de nuevo?",
-        "Disculpa no entiendo lo que quieres decir. ¿podrias escribirlo de otra manera?",
-        "no pude entenderte, disculpame! ¿podrias repetirme?",
+        "Disculpa. ¿puedes decirlo de nuevo? es que no te entendí😊",
+        "Disculpa no entiendo lo que quieres decir. ¿podrias escribirlo de otra manera?🙈",
+        "no pude entenderte, disculpame! ¿podrias repetirme? 🙄",
     ][random.randrange(3)]
     return response
 
