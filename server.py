@@ -342,9 +342,16 @@ def check_all_messages(message):
 
     response(
         'Dale, te perdono. 😒',
-        ['disculpa', 'perdon', 'perdón', 'disculpame','perdoname','perdóname'],
+        ['disculpa', 'perdon', 'perdón', 'disculpame','perdoname','perdóname','discúlpame'],
         single_response=True
     )
+
+    response(
+        'De nada. 😊',
+        ['gracias', 'grax', 'agradecido', 'gracias!', 'gracias', 'agradezco','mucho','muchas'],
+        single_response=True
+    )
+
 #-----------------temas (fin)-------------------------------------------------------------------------------------------------------------
 
 #-----------------sobre BIN (inicio)------------------------------------------------------------------------------------------------------
