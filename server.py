@@ -60,7 +60,7 @@ def check_all_messages(message):
 #-----------------saludos (inicio)--------------------------------------------------------------------------------------------------------
     response(
         '¡Hola! ¡Mucho gusto!😮',
-        ['hola', 'buenas', 'holis', 'hi'],
+        ['hola', 'buenas', 'holis', 'hi', 'holaaaaa','alo'],
         single_response=True
     )
 
@@ -77,6 +77,27 @@ def check_all_messages(message):
     )
 
 #-----------------saludos (fin)-----------------------------------------------------------------------------------------------------------
+
+#-----------------despedidas (inicio)-----------------------------------------------------------------------------------------------------
+    response(
+        "Ya te vas? ¡Bueno, chao! 😊",
+        ['chao', 'bay', 'adios', 'chaito'],
+        single_response=True
+    )
+
+    response(
+        "¡Muchas gracias, igualmente! 👻",
+        ['cuidate', 'saludos', 'bendiciones', 'placer'],
+        single_response=True
+    )
+
+    response(
+        "Dale, yo espero.🪁🧸",
+        ['mañana', 'despues', 'próxima', 'luego'],
+        single_response=True
+    )
+
+#-----------------despedidas (fin)--------------------------------------------------------------------------------------------------------
 
 #-----------------groserias (inicio)------------------------------------------------------------------------------------------------------
     response(
@@ -99,25 +120,25 @@ def check_all_messages(message):
 
     response(
         'No es apropiado que digas eso. 😢',
-        ['gay', 'creador', 'gay', 'marica'],
+        ['gay', 'maluco', 'gay', 'marica'],
         single_response=True
     )
 
     response(
         'Eres una persona grosera. 😢',
-        ['mk', 'creador', 'mama', 'gay'],
+        ['mk', 'maluco', 'mama', 'gay'],
         single_response=True
     )
 
     response(
         'Debería darte vergüenza las cosas que dices. 😓',
-        ['huevo', 'creador', 'huevo', 'gay'],
+        ['huevo', 'maluco', 'huevo', 'gay'],
         single_response=True
     )
 
     response(
         'No tienes escrúpulos. 😢',
-        ['puto', 'creador', 'baboso', 'mk'],
+        ['puto', 'maluco', 'baboso', 'mk'],
         single_response=True
     )
 
@@ -174,7 +195,7 @@ def check_all_messages(message):
 #-----------------sobre autor de desarrollo (inicio)*-------------------------------------------------------------------------------------
     response(
         'Mi creador es una persona buena, inteligente, le gusta mucho estudiar y ayudar a las personas.😊',
-        ['háblame', 'jorge', 'programador', 'coméntame'],
+        ['háblame', 'jorge', 'programador', 'coméntame', 'hablame'],
         single_response=True
     )
 
@@ -186,13 +207,13 @@ def check_all_messages(message):
 
     response(
         'Mi programador hace muchas cosas.😲 Él es ingeniero eléctrico, desarrollador web, músico, astrónomo aficionado y esposo.🤗',
-        ['hacer', 'profesión', 'dedica', 'estudia'],
+        ['hacer', 'profesión','se', 'dedica', 'estudia','trabaja','estudió','trabajando','esta','está','jorge','puede','profesion','profecion'],
         single_response=True
     )
 
     response(
         'Mi programador trabaja con React, Angular, WordPress, HTML, CSS, JS, Python, PHP, entre otros, así como Excel, AutoCAD y elementos de renderizado 3D enfocados a ingeniería.',
-        ['tecnologías', 'tecnología', 'maneja', 'sabe'],
+        ['tecnologías','tecnologias', 'tecnología','tecnologia', 'maneja', 'sabe','jorge','programador','desarrolla','cómo','como','hacer','skill','preferencia','preferencias','habilidades'],
         single_response=True
     )
 
@@ -209,7 +230,7 @@ def check_all_messages(message):
     )
 
     response(
-        'Mi programador estudió para ser desarrollador Frontend principalmente, además de ingeniería eléctrica y docencia en matemáticas, física y música.',
+        'Mi programador estudió para ser desarrollador Frontend principalmente, además de ingeniería eléctrica y docencia en matemáticas, física y música. Él esta trabajando como independiente ahora mismo😊',
         ['carreras', 'estudios', 'estudio', 'jorge'],
         single_response=True
     )
@@ -240,13 +261,13 @@ def check_all_messages(message):
 
     response(
         'Él ahora mismo vive en Barranquilla, Colombia.',
-        ['vive', 'ubicado', 'país', 'ciudad'],
+        ['vive', 'ubicado', 'país', 'ciudad','donde','jorge','programador','viviendo'],
         single_response=True
     )
 
     response(
         'Él te manda a decir que aspira a un salario de $2.500.000.',
-        ['aspira', 'ganar', 'salario', 'quiere'],
+        ['aspira', 'ganar', 'salario', 'quiere','cuanto'],
         single_response=True
     )
 
@@ -258,7 +279,7 @@ def check_all_messages(message):
 
     response(
         'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
-        ['trabajando', 'laborando', 'empleado', 'empresa'],
+        ['trabajando', 'laborando', 'empleado', 'empresa','trabaja','jorge','donde','está','trabaja','ahora','mismo'],
         single_response=True
     )
 
@@ -270,13 +291,13 @@ def check_all_messages(message):
 
     response(
     "Puedes contactar a mi creador por WhatsApp y LinkedIn en la barra de inicio.",
-    ['contacto', 'contactar', 'buscar', 'encontrar',"programador"],
+    ['contacto', 'contactar', 'buscar', 'encontrar',"programador",'como','jorge','llamo','puedo','llamar','donde'],
     single_response=True
     )
 
     response(
         "Puedes contactar a mi creador en el número +57 321 882 8546 de Colombia.",
-        ['telefono', 'numero', 'contacto', 'llamar',"programador", 'contactar',],
+        ['teléfono', 'número', 'contacto', 'llamar',"programador", 'contactár','contactarlo','como','puedo','llamarlo'],
         single_response=True
     )
 
@@ -285,60 +306,108 @@ def check_all_messages(message):
 #-----------------temas (inicio)----------------------------------------------------------------------------------------------------------
     response(
         'Mi creador toca diferentes instrumentos musicales como Guitarra, bajo, piano, acordeón, ocarina, armónica, batería, saxofón. 🎸🎹🥁🎷',
-        ['instrumentos', 'musicales', 'música', 'toca'],
+        ['instrumentos', 'musicales', 'música', 'toca','jobies','jobis','cuales','sus','pasa','su','tiempo'],
         single_response=True
     )
 
     response(
         'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
-        ['trabajando', 'laborando', 'empleado', 'empresa'],
+        ['trabajando', 'laborando', 'empleado', 'empresa','trabaja','jorge','en','donde','esta'],
         single_response=True
     )
 
     response(
         'Mi programador no tiene ningún problema con el trabajo presencial. Él cree que es lo mejor para así absorber todo el conocimiento de sus colegas. 💡👥',
-        ['presencial', 'remoto', 'trabajar', 'híbrido'],
+        ['presencial', 'remoto', 'trabajar', 'híbrido','como','quiere','jorge'],
         single_response=True
     )
 
+    response(
+        'Okidoky 😒👍',
+        ['ok', 'dale', 'bien', 'okey','oky'],
+        single_response=True
+    )
+
+    response(
+        'Que divertido eres 🙈❤🎈',
+        ['mucho', 'gusto', 'placer', 'conocerte'],
+        single_response=True
+    )
+
+    response(
+        'Apuesto que sí 💪🏽😒✨',
+        ['así', 'es', 'porsupuesto', 'creo','si'],
+        single_response=True
+    )
+
+    response(
+        'Dale, te perdono. 😒',
+        ['disculpa', 'perdon', 'perdón', 'disculpame','perdoname','perdóname'],
+        single_response=True
+    )
 #-----------------temas (fin)-------------------------------------------------------------------------------------------------------------
 
 #-----------------sobre BIN (inicio)------------------------------------------------------------------------------------------------------
     response(
-        'Mi nombre es BIN',
-        ['como', 'llamas', 'cual', 'nombre'],
+        'A mí las cosas no me saben a nada 😗, pero me gusta el conocimiento 😋.',
+        ['gusta', 'comer', 'probar', 'tomar','ti','favorita'],
+        single_response=True
+    )
+
+    response(
+        'Mi nombre es BIN 😐🪐❤',
+        ['como', 'llamas', 'cual', 'nombre', 'tu'],
         single_response=True
     )
 
     response(
         'Me gusta mucho jugar, de hecho, mi programador me está programando un juego para divertirme contigo. 🎮😄',
-        ['jugar', 'sabes', 'hacer', 'juegos'],
+        ['jugar', 'sabes', 'hacer', 'juegos','gusta','puedes','juego','favorto'],
         single_response=True
     )
 
     response(
         'Si quieres, podemos charlar sobre mi programador, ¡o podemos jugar! 🗣️🎮',
-        ['puedes', 'hacer', 'hablamos', 'jugamos'],
+        ['puedes', 'hacer', 'hablamos', 'jugamos','quieres','charlar','hablar'],
         single_response=True
     )
 
     response(
         'Me gustan mucho las canciones, especialmente las que toca mi creador. Si quieres, puedes escuchar su música en la sección de documentos. 🎵🎶',
-        ['gusta', 'musica', 'canciones', 'escuchar'],
+        ['gusta', 'música', 'canciones', 'escuchar','te','escuchar'],
         single_response=True
     )
 
     response(
-        'Me gustan las fotos del cielo que hace mi creador. Si quieres, puedes verlas en la sección de documentos. 🌌📸',
-        ['gustan', 'fotos', 'cuales', 'cielo'],
+        'Me gusta ver las fotos del cielo que hace mi creador. Si quieres, puedes verlas en la sección de documentos. 🌌📸',
+        ['gustan', 'fotos', 'cuales', 'cielo','te','gusta','hacer'],
         single_response=True
     )
 
     response(
-        'Yo quiero jugar "Biiiinnn Gooolll", pero mi programador aún está programándome un juego. ⚽🎮',
-        ['quieres', 'hacer', 'gustaria', 'jugar'],
+        'Yo quiero jugar "Biiiinnn Gooolll", pero mi programador aún está programándome un juego. 😓⚽',
+        ['quieres', 'hacer', 'gustaria', 'jugar','juguemos','vamos','jugamos'],
         single_response=True
     )
+    
+    response(
+    'Me llamo Bin! y quiero ser tu amigo.', 
+    ['nombre', 'llamas', 'llamarte', 'llamo','como','cual'], 
+    single_response=True
+    )
+
+    response(
+        'Tengo 5 años, pero nací en 1998.', 
+        ['años', 'tienes', 'edad', 'cuantos','cuando','naciste'], 
+        single_response=True
+    )
+
+    response(
+        'Tengo muchas historias sobre mí, ya mi creador está trabajando para que yo salir al mundo. ¡Es un secreto…😲No le digas que te dije…🙈❤!', 
+        ['historias', 'ti', 'cuentos', 'cuentame', 'hablame', 'tienes', 'decirme'], 
+        single_response=True
+    )
+
 #-----------------sobre BIN (fin)---------------------------------------------------------------------------------------------------------
 
 #-----------------Algoritmo palabra de Dios (inicio)--------------------------------------------------------------------------------------
@@ -545,9 +614,9 @@ def check_all_messages(message):
 
 def unknown():
     response = [
+        "Disculpa, ¿podrías escribir bien, con tildes y todo? 😊 Es que apenas estoy aprendiendo y no puedo entenderte bien. 🙁",
         "Disculpa. ¿puedes decirlo de nuevo? es que no te entendí😊",
         "Disculpa no entiendo lo que quieres decir. ¿podrias escribirlo de otra manera?🙈",
-        "no pude entenderte, disculpame! ¿podrias repetirme? 🙄",
     ][random.randrange(3)]
     return response
 
