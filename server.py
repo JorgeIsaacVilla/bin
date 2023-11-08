@@ -335,6 +335,12 @@ def check_all_messages(message):
         single_response=True
     )
 
+    response(
+        'Mientes, Mientes, como tus amarillos dientes 😖, juguemos de nuevo 😣',
+        ['gane', 'gané', 'perdiste', 'perdsites', 'perdite', 'perdedor','maleta'],
+        single_response=True
+    )
+
 #-----------------temas (fin)-------------------------------------------------------------------------------------------------------------
 
 #-----------------sobre BIN (inicio)------------------------------------------------------------------------------------------------------
