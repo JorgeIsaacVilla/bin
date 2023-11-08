@@ -113,7 +113,13 @@ p{
     height: 30px;
     border-radius: 100%;
 }
-    
+
+.mueca{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
 .eyes {    
     position: relative;    
     top: -15px; 

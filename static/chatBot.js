@@ -7,6 +7,9 @@ button.addEventListener("click", function (event) {
   event.preventDefault(); // Evitar que se recargue la página
   const user_input = input.value;
   send_message(user_input);
+
+  const sound = new Audio('./static/sonidos/vosBin1.mp3')
+  sound.play();
   //input.value = "";
 });
 

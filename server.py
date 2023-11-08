@@ -66,7 +66,7 @@ def check_all_messages(message):
 
     response(
         '¿Yo? Nada, jugar jajaja😁',
-        ['estás', 'sientes', 'cuentas', 'pasando','estas','haces','hace'],
+        ['estás', 'sientes', 'cuentas', 'pasando','estas','haces','hace','como'],
         single_response=True
     )
 
@@ -376,7 +376,7 @@ def check_all_messages(message):
 
     response(
         'Yo quiero jugar "¡Biiinnn Goooool!", ve a la sección de Juegos. Vamos a divertirnos. 🤣⚽',
-        ['quieres', 'hacer', 'gustaria', 'jugar','juguemos','vamos','jugamos','juegas'],
+        ['quieres', 'hacer', 'gustaria', 'jugar','juguemos','vamos','jugamos','juegas','cual','juego'],
         single_response=True
     )
     
