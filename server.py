@@ -65,8 +65,8 @@ def check_all_messages(message):
     )
 
     response(
-        '¿Yo? Nada, lo de siempre jajaja😁',
-        ['estás', 'sientes', 'cuentas', 'pasando'],
+        '¿Yo? Nada, jugar jajaja😁',
+        ['estás', 'sientes', 'cuentas', 'pasando','estas','haces','hace'],
         single_response=True
     )
 
@@ -81,7 +81,7 @@ def check_all_messages(message):
 #-----------------despedidas (inicio)-----------------------------------------------------------------------------------------------------
     response(
         "Ya te vas? ¡Bueno, chao! 😊",
-        ['chao', 'bay', 'adios', 'chaito'],
+        ['chao', 'bay', 'adios', 'chaito','chau'],
         single_response=True
     )
 
@@ -93,7 +93,7 @@ def check_all_messages(message):
 
     response(
         "Dale, yo espero.🪁🧸",
-        ['mañana', 'despues', 'próxima', 'luego'],
+        ['mañana', 'despues', 'próxima', 'luego','proxima'],
         single_response=True
     )
 
@@ -102,7 +102,7 @@ def check_all_messages(message):
 #-----------------groserias (inicio)------------------------------------------------------------------------------------------------------
     response(
         '¡Qué grosero eres! 😣',
-        ['hp', 'hijueputa', 'huevón', 'bobo'],
+        ['hp', 'hijueputa', 'huevón', 'bobo','huevon'],
         single_response=True
     )
 
@@ -195,7 +195,7 @@ def check_all_messages(message):
 #-----------------sobre autor de desarrollo (inicio)*-------------------------------------------------------------------------------------
     response(
         'Mi creador es una persona buena, inteligente, le gusta mucho estudiar y ayudar a las personas.😊',
-        ['háblame', 'jorge', 'programador', 'coméntame', 'hablame'],
+        ['háblame', 'jorge', 'programador', 'coméntame', 'hablame','comentame'],
         single_response=True
     )
 
@@ -207,43 +207,43 @@ def check_all_messages(message):
 
     response(
         'Mi programador hace muchas cosas.😲 Él es ingeniero eléctrico, desarrollador web, músico, astrónomo aficionado y esposo.🤗',
-        ['hacer', 'profesión','se', 'dedica', 'estudia','trabaja','estudió','trabajando','esta','está','jorge','puede','profesion','profecion'],
+        ['hacer', 'profesión','se', 'dedica', 'estudia','trabaja','estudió','trabajando','esta','está','jorge','puede','profesion','profecion','estudio'],
         single_response=True
     )
 
     response(
         'Mi programador trabaja con React, Angular, WordPress, HTML, CSS, JS, Python, PHP, entre otros, así como Excel, AutoCAD y elementos de renderizado 3D enfocados a ingeniería.',
-        ['tecnologías','tecnologias', 'tecnología','tecnologia', 'maneja', 'sabe','jorge','programador','desarrolla','cómo','como','hacer','skill','preferencia','preferencias','habilidades'],
+        ['tecnologías','tecnologias', 'tecnología','tecnologia', 'maneja', 'sabe','jorge','programador','desarrolla','cómo','como','hacer','skill','preferencia','preferencias','habilidades','cuales'],
         single_response=True
     )
 
     response(
         'Me desarrolló Jorge Isaac Villa López,😊 te sugiero mucho que lo contactes. Es de los que no se rinde hasta lograr los objetivos. ¡Si no, mírame a mí! 😎🎸',
-        ['desarrollo', 'creó', 'programó', 'hizo'],
+        ['desarrollo', 'creó', 'programó', 'hizo','creo','programo','quien','desolló'],
         single_response=True
     )
 
     response(
         'Mi programador Jorge estudió ingeniería eléctrica, pero a lo largo de su carrera adquirió habilidades de programación, hasta el punto en que pudo automatizar procesos de estudios y procesos muy complejos, haciéndolo cada vez más competitivo. También estudió desarrollo enfocado en web.',
-        ['estudio', 'estudios', 'preparación', 'trabajó'],
+        ['estudio', 'estudios', 'preparación', 'trabajó','tranajo','preparacion','cual','jorge'],
         single_response=True
     )
 
     response(
         'Mi programador estudió para ser desarrollador Frontend principalmente, además de ingeniería eléctrica y docencia en matemáticas, física y música. Él esta trabajando como independiente ahora mismo😊',
-        ['carreras', 'estudios', 'estudio', 'jorge'],
+        ['carreras', 'estudios', 'estudio', 'jorge','cuales','ingenieria','ing'],
         single_response=True
     )
 
     response(
         'Una persona agradable,😊 él no habla mucho, pero cuando se lo permiten, puede ser divertido. Es colaborador y le gusta ayudar a las personas.',
-        ['personalidad', 'describe', 'describir', 'jorge'],
+        ['personalidad', 'describe', 'describir', 'jorge','hablame','describe','describeme','comentame','cual','programador','mensiona','cosas','menciona'],
         single_response=True
     )
 
     response(
         'Le gusta la música clásica, el pop rock, bachata, salsa, merengue, pero también le gusta la astronomía y tocar instrumentos musicales. 🎶🎸🎹🎺🎤🌌',
-        ['gusta', 'jorge', 'gustos', 'prefiere'],
+        ['gusta', 'jorge', 'gustos', 'prefiere','cuales','musica','arte','jovis','jobis','hobis','hobbis','hobies','música'],
         single_response=True
     )
 
@@ -255,7 +255,7 @@ def check_all_messages(message):
 
     response(
         'Mi programador nació en el año 1993.',
-        ['edad', 'años', 'jorge', 'nació'],
+        ['edad', 'años', 'jorge', 'nació','cuantos','año'],
         single_response=True
     )
 
@@ -267,25 +267,25 @@ def check_all_messages(message):
 
     response(
         'Él te manda a decir que aspira a un salario de $2.500.000.',
-        ['aspira', 'ganar', 'salario', 'quiere','cuanto'],
+        ['aspira', 'ganar', 'salario', 'quiere','cuanto','cual','aspiracion','aspiración'],
         single_response=True
     )
 
     response(
         'Mi creador toca diferentes instrumentos musicales como Guitarra, bajo, piano, acordeón, ocarina, armónica, batería, saxofón. 🎸🎹🥁🎷',
-        ['instrumentos', 'musicales', 'música', 'toca'],
+        ['instrumentos', 'musicales', 'música', 'toca','musica','jorge','programador'],
         single_response=True
     )
 
     response(
         'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
-        ['trabajando', 'laborando', 'empleado', 'empresa','trabaja','jorge','donde','está','trabaja','ahora','mismo'],
+        ['trabajando', 'laborando', 'empleado', 'empresa','trabaja','jorge','donde','está','trabaja','ahora','mismo','esta','programador'],
         single_response=True
     )
 
     response(
         'Mi programador no tiene ningún problema con el trabajo presencial. Él cree que es lo mejor para así absorber todo el conocimiento de sus colegas. 💡👥',
-        ['presencial', 'remoto', 'trabajar', 'híbrido'],
+        ['presencial', 'remoto', 'trabajar', 'híbrido','hibrido','como', 'quiere','jorge','programador','desarrollador'],
         single_response=True
     )
 
@@ -297,30 +297,13 @@ def check_all_messages(message):
 
     response(
         "Puedes contactar a mi creador en el número +57 321 882 8546 de Colombia.",
-        ['teléfono', 'número', 'contacto', 'llamar',"programador", 'contactár','contactarlo','como','puedo','llamarlo'],
+        ['teléfono', 'número', 'contacto', 'llamar',"programador", 'contactár','contactarlo','como','puedo','llamarlo','numero','contactar','telefono'],
         single_response=True
     )
 
 #-----------------sobre autor de desarrollo (fin)*----------------------------------------------------------------------------------------
 
 #-----------------temas (inicio)----------------------------------------------------------------------------------------------------------
-    response(
-        'Mi creador toca diferentes instrumentos musicales como Guitarra, bajo, piano, acordeón, ocarina, armónica, batería, saxofón. 🎸🎹🥁🎷',
-        ['instrumentos', 'musicales', 'música', 'toca','jobies','jobis','cuales','sus','pasa','su','tiempo'],
-        single_response=True
-    )
-
-    response(
-        'Mi programador está realizando trabajos independientes en desarrollo web y de ingeniería. Pronto actualizará su portafolio virtual. ¡Pero en una empresa formal, aún no! =( ¡Pero está muy ansioso de trabajar contigo! =) ¡De seguro que sí. 💼👨‍💻',
-        ['trabajando', 'laborando', 'empleado', 'empresa','trabaja','jorge','en','donde','esta'],
-        single_response=True
-    )
-
-    response(
-        'Mi programador no tiene ningún problema con el trabajo presencial. Él cree que es lo mejor para así absorber todo el conocimiento de sus colegas. 💡👥',
-        ['presencial', 'remoto', 'trabajar', 'híbrido','como','quiere','jorge'],
-        single_response=True
-    )
 
     response(
         'Okidoky 😒👍',
@@ -392,8 +375,8 @@ def check_all_messages(message):
     )
 
     response(
-        'Yo quiero jugar "Biiiinnn Gooolll", pero mi programador aún está programándome un juego. 😓⚽',
-        ['quieres', 'hacer', 'gustaria', 'jugar','juguemos','vamos','jugamos'],
+        'Yo quiero jugar "¡Biiinnn Goooool!", ve a la sección de Juegos. Vamos a divertirnos. 🤣⚽',
+        ['quieres', 'hacer', 'gustaria', 'jugar','juguemos','vamos','jugamos','juegas'],
         single_response=True
     )
     
